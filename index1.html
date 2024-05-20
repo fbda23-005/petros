@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/mystyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>warnerbros-Home</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbar-container">
+      <div class="logo-container">
+        <h1><img src="logo.PNG" style="width:70px;height:70px;"></h1>
+      </div>
+      <div class="menu-container">
+
+        <nav>
+          <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="tvshows.html">TV shows</a></li>
+            <li><a href="series.html">Series</a></li>
+            <li><a href="popular.html">Popular</a></li>
+
+          </ul>
+
+        </nav>
+      </div>
+
+      <div class="search-container">
+        <form class="example" action="action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="sidebar">
+    <a href="imdex.html"><i class="fa-solid fa-house"></i></a>
+    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+    <a href="gamesandapps.html"><i class="fa-solid fa-gamepad"></i></a>
+    <a href="collection.html"><i class="fa-solid fa-bookmark"></i></a>
+    <a href="feedback.html"><i class="fa-solid fa-comment"></i></a>
+  </div>
+
+  <div class="container">
+    <div class="content-container">
+      <div class="featured-content"
+        style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515),url('image1.JPG');"
+      >
+        <img class="featured-title" src="image2.PNG" alt="" />
+        <p class="featured-desc">In the 18th century,apprentice exorcist Tom Ward is the lynchpin in a battle between good and evil when imprisoned witch Mother Malkin escapes.</p>
+        <button class="featured-button">WATCH NOW</button>
+      </div>
+
+      <div class="movie-list-container">
+        <h1 class="movie-list-title">NEW RELEASES</h1>
+        <div class="movie-list-wrapper">
+          <div class="movie-list">
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="MOVIES/1.JPG" alt="">
+              <span class="movie-list-item-title">Expendables</span>
+              <p class="movie-list-item-desc">In the 18th century,apprentice exorcist Tom Ward is the lynchpin in a battle between good and evil when imprisoned witch Mother Malkin escapes.</p>
+              <button class="movie-list-item-button">WATCH NOW</button>
+            </div>
+<div class="movie-list-item">
+<img class="movie-list-item-img" src="TV SHOWS/7.JPG" alt"">
+<span class="movie-list-item-title">Blood&Water</span>
+<p class="movie-list-item-desc">In the 18th century,apprentice exorcist Tom Ward is the lynchpin in a battle between good and evil when imprisoned witch Mother Malkin escapes.</p>
+<button class="movie-list-item-button">WATCH NOW</button>
+</div>
+
+<div class="movie-list-item">
+<img class="movie-list-item-img" src="TV SHOWS/1.JPG" alt"">
+<span class="movie-list-item-title">Grown-ish</span>
+<p class="movie-list-item-desc">In the 18th century,apprentice exorcist Tom Ward is the lynchpin in a battle between good and evil when imprisoned witch Mother Malkin escapes.</p>
+<button class="movie-list-item-button">WATCH NOW</button>
+</div>
+
+<div class="movie-list-item">
+<img class="movie-list-item-img" src="MOVIES/4.JPG" alt"">
+<span class="movie-list-item-title">Mr Bones</span>
+<p class="movie-list-item-desc">In the 18th century,apprentice exorcist Tom Ward is the lynchpin in a battle between good and evil when imprisoned witch Mother Malkin escapes.</p>
+<button class="movie-list-item-button">WATCH NOW</button>
+</div>
+
+<div class="movie-list-item">
+<img class="movie-list-item-img" src="MOVIES/5.JPG" alt"">
+<span class="movie-list-item-title">Expendables</span>
+<p class="movie-list-item-desc">In the 18th century,apprentice exorcist Tom Ward is the lynchpin in a battle between good and evil when imprisoned witch Mother Malkin escapes.</p>
+<button class="movie-list-item-button">WATCH NOW</button>
+</div>
+            </div>
+			
+          <div class="arrow-container">
+            <button class="arrow left-arrow" id="leftArrowBtn">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="arrow right-arrow" id="rightArrowBtn">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      
+<footer>
+<a href="https://www.facebook.com/search/top?q=warner%20bros.%20entertainment"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://www.instagram.com/warnerbrosentertainment/"><i class="fa-brands fa-square-instagram"></i><a/>
+<a href=""><i class="fa-brands fa-x-twitter"></i></a>
+
+<div>
+<a href="">LEGACY DATA</a>
+<a href="">ABOUT US</a>
+<a href="">CONTACT US</a>
+</div>
+</footer>
+<script>
+const leftArrowBtn = document.getElementById('leftArrowBtn');
+const rightArrowBtn = document.getElementById('rightArrowBtn');
+const movieList = document.querySelector('.movie-list-container');
+
+leftArrowBtn.addEventListener('click', function() {
+  movieList.scrollBy({
+    left: -300,
+    behavior: 'smooth'
+  });
+});
+
+rightArrowBtn.addEventListener('click', function() {
+  movieList.scrollBy({
+    left: 300,
+    behavior: 'smooth'
+  });
+});
+
+</script>
+
+
+</body>
+
+
+
+</html>
